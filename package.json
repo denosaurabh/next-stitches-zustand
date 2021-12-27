@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-stitches-zustand",
+  "name": "next-stitches-zustand",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -7,10 +7,18 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "bin": {
+    "next-stitches-zustand": "./generate-app.js"
+  },
   "dependencies": {
+    "@stitches/react": "^1.2.6",
+    "immer": "^9.0.7",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "rimraf": "^3.0.2",
+    "swr": "^1.1.1",
+    "zustand": "^3.6.8"
   },
   "devDependencies": {
     "@types/node": "17.0.5",
